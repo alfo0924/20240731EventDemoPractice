@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Set button click listeners
         zoomInButton.setOnClickListener(v -> {
-            textSize += 2; // Increase text size by 2 SP
+            textSize *= 1.5; // Increase text size by 2 SP
             updateTextSize();
         });
 
         zoomOutButton.setOnClickListener(v -> {
-            textSize -= 2; // Decrease text size by 2 SP
+            textSize /= 2; // Decrease text size by 2 SP
             updateTextSize();
         });
 
